@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Cinzel Decorative', serif;
+    background-color: #fff3c9;
+}
+
+/* HEADER */
+
+.logo {
+    margin-right: auto; /* Empuja el menú hacia la derecha */
+}
+
+
+
+
+.image-section img {
+    
+    width: 100%;
+    height: 650px;
+    object-fit: cover; /* Ajustar la imagen para que cubra el área sin distorsionarse */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em; /* Aumentar el tamaño de la fuente */
+    font-style: italic; /* Aplicar estilo cursivo */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Aumentar el efecto de sombra */
+    letter-spacing: 2px; /* Espaciado de letras para mayor impacto */
+    text-align: center; /* Centrar el texto */
+    font-family: 'Georgia', serif; /* Elegir una fuente serif para un estilo más elegante */
+}
+/* FIN DE HEADER */
+/* SERVICIOS */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Color negro */
+  border: 2px solid black; /* Bordes gruesos */
+  width: 40px; /* Ajusta el ancho del botón */
+  height: 40px; /* Ajusta la altura del botón */
+  background-size: 50%; /* Escala el ícono */
+  border-radius: 50%; /* Bordes redondeados */
+}
+
+/* FIN DE SERVICIOS */
+/* NOSOTROS */
+.about-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9; /* Color de fondo suave */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+.about-content {
+    display: flex; /* Usar flexbox para organizar el contenido */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Permitir que el contenido se envuelva en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+.about-image {
+    flex: 1; /* Permitir que la imagen ocupe espacio flexible */
+    max-width: 300px; /* Ancho máximo para la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+.about-image img {
+    width: 100%; /* Asegurar que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantener proporciones de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.about-description {
+    flex: 2; /* Permitir que la descripción ocupe más espacio */
+    max-width: 600px; /* Ancho máximo para la descripción */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.about-description h3 {
+    font-size: 1.8em; /* Aumentar el tamaño del título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    color: #333; /* Color más oscuro para el título */
+}
+
+.about-description p {
+    font-size: 1.1em; /* Aumentar el tamaño de la fuente del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    color: #666; /* Color del texto del párrafo */
+}
+/* FIN DE NOSOTROS */
+/* CERTIFICACIONES */
+.certifications-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff; /* Color de fondo más claro para mayor contraste */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+.certification-container {
+    display: flex; /* Usar flexbox para alinear certificaciones en fila */
+    justify-content: space-around; /* Espacio igual entre certificaciones */
+    flex-wrap: wrap; /* Permitir que las certificaciones se envuelvan en pantallas pequeñas */
+    margin-top: 20px; /* Espacio entre el título y las certificaciones */
+}
+
+.certification-item {
+    background-color: #ffffff; /* Fondo blanco para cada tarjeta */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    padding: 20px; /* Espacio interno */
+    margin: 10px; /* Espacio entre tarjetas */
+    transition: transform 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+.certification-item:hover {
+    transform: translateY(-5px); /* Elevar la tarjeta al pasar el ratón */
+}
+
+.certification-image {
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Mantener proporciones */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+.certification-description {
+    text-align: center; /* Alinear texto al centro */
+}
+
+.certification-description h3 {
+    font-size: 1.5em; /* Aumentar tamaño del título */
+    margin: 0; /* Eliminar margen por defecto */
+    font-weight: bold; /* Hacer el texto más prominente */
+}
+/* FIN DE CERTIFICACIONES */
+/* CONTACTO */
+.contact-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f4f8; /* Color de fondo claro */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+.contact-content {
+    display: flex; /* Usar flexbox para organizar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    flex-wrap: wrap; /* Permitir que el contenido se envuelva en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+.contact-info {
+    flex: 1; /* Permitir que la información de contacto ocupe espacio flexible */
+    max-width: 400px; /* Ancho máximo para la información de contacto */
+    text-align: left; /* Alinear texto a la izquierda */
+    padding-right: 20px; /* Espacio a la derecha */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-info p {
+    font-size: 1.1em; /* Aumentar el tamaño de la fuente */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    color: #333; /* Color del texto */
+}
+
+.contact-info a {
+    color: #25D366; /* Color de enlace de WhatsApp */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Hacer el enlace más prominente */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.contact-map {
+    flex: 1; /* Permitir que el mapa ocupe espacio flexible */
+    max-width: 400px; /* Ancho máximo para el mapa */
+}
+
+.contact-map iframe {
+    border-radius: 8px; /* Bordes redondeados para el mapa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+
+
+
+    
